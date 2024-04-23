@@ -1,0 +1,39 @@
+﻿<Window x:Class="LR08_C221_KorzunovMatvey.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR08_C221_KorzunovMatvey"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №8" Height="786" Width="1024"
+        WindowStyle="SingleBorderWindow" ResizeMode="CanMinimize">
+    <Grid Background="#1e1e1e">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="#151515" Grid.RowSpan="2">
+            <Button Content="Нажми 1" Margin="8"/>
+        </StackPanel>
+
+        <DockPanel Grid.ColumnSpan="4" Margin="212, 8, 8, 8">
+            <Image Source="imgs/IMG_8211.jpeg" Stretch="Uniform"/>
+            <TextBlock Text="Информация о преподавателе"
+                       FontFamily="Trebuchet MS"
+                       Foreground="White"
+                       FontSize="24"
+                       HorizontalAlignment="Left"/>
+            <Button Name="btnExit" Content="Выход" 
+                    Margin="400, 8, 8, 8"
+                    DockPanel.Dock="Right"
+                    Click="btnExit_Click"/>
+        </DockPanel>
+    </Grid>
+</Window>
+ 
